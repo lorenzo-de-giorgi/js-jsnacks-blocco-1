@@ -40,5 +40,4 @@ btnDifference.addEventListener('click', function() {
         let differentSection = document.getElementById('differenceElement');
         differentSection.innerHTML = `Le due array hanno la stessa lunghezza!`
     }
-    
 })
