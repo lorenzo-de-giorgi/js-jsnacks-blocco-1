@@ -13,6 +13,49 @@
 </head>
 <body>
 
+    <div class="container-fluid ">
+        <div class="row">
+            <!-- colonna array-list -->
+            <div class="col-4">
+                <div class="mb-3 text-center">
+                    <h3>Controlla se hai il cocomero in frigo</h3>
+                    <button id="check-cocomero" class="btn btn-primary">Controlla</button>
+                    <p id="cocomero-result"></p>
+                </div>
+            </div>
+            <!-- colonna array-tail -->
+            <div class="col-4">
+                <div class="mb-3">
+                    <label for="arrayelement" class="form-label">Quanti elementi vuoi inserire nell'array? (max 100)</label>
+                    <input class="form-control" id="arrayelement">
+                </div>
+                <div class="mb-3">
+                    <label for="printelement" class="form-label">Quanti elementi vuoi stampare?</label>
+                    <input class="form-control" id="printelement">
+                </div>
+                <button id="print" class="btn btn-primary">Invia</button>
+                <div>
+                    <p id="complete-array"></p>
+                    <p id="last-element"></p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="mb-3">
+                    <label for="firstarray" class="form-label">Quanti elementi vuoi inserire nella prima array? (max 100)</label>
+                    <input class="form-control" id="firstarray">
+                </div>
+                <div class="mb-3">
+                    <label for="secondarray" class="form-label">Quanti elementi vuoi inserire nella seconda array? (max 100)</label>
+                    <input class="form-control" id="secondarray">
+                </div>
+                <button id="difference" class="btn btn-primary">Stampa Differenza</button>
+                <p id="firstElementArray"></p>
+                <p id="secondElementArray"></p>
+                <p id="differenceElement"></p>
+            </div>
+        </div>
+    </div>
+
     <!-- JavaScript -->
     <script src="js/utility.js" type="text/javascript"></script>
     <script src="array-lista/script.js" type="text/javascript"></script>

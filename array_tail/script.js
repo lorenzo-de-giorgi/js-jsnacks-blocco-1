@@ -1,9 +1,13 @@
-let numArray = [];
-let numElement = parseInt(prompt("Quanti elementi vuoi inserire nell'array? (max 100)"));
-let numPrint = parseInt(prompt("Quanti elementi vuoi stampare?"));
-
-for (let i = 0; i < numElement; i++) {
-    numArray.push(getRndInteger(1, 100));
-}
-console.log(numArray);
-console.log(numArray.slice(-numPrint));
+let btn = document.getElementById('print');
+btn.addEventListener('click', function(){
+    let numArray = [];
+    let numElementInput = document.getElementById('arrayelement').value;
+    let printElementInput = document.getElementById('printelement').value;
+    for (let i = 0; i < numElementInput; i++) {
+        numArray.push(getRndInteger(1, 100));
+    }
+    let completeArray = document.getElementById('complete-array');
+    let lastElement = document.getElementById('last-element');
+    completeArray.innerHTML = `Array completa: <br> ${numArray}`
+    lastElement.innerHTML = `Array completa: <br> ${numArray.slice(-printElementInput)}`
+})
